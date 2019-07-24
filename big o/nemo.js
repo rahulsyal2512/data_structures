@@ -17,19 +17,21 @@ function findNemo(array) {
   // console.log("It took " + (t1 - t0) + " ms");
 }
 
-findNemo(everyone);
+// findNemo(everyone);
 
 /* the complexity is O(n) --> Linear Time, as
  *the number of loops increases with increase in elements of array.
  */
 
-// O(1) Constant- no loops
-// O(log N) Logarithmic- usually searching algorithms have log n if they are sorted (Binary Search)
-// O(n) Linear- for loops, while loops through n items
-// O(n log(n)) Log Liniear- usually sorting operations
-// O(n^2) Quadratic- every element in a collection needs to be compared to ever other element. Two
-// nested loops
-// O(2^n) Exponential- recursive algorithms that solves a problem of size N
-// O(n!) Factorial- you are adding a loop for every element
-// Iterating through half a collection is still O(n)
-// Two separate collections: O(a * b)
+function compressBoxes() {
+  console.log(everyone[0]); // O(1)
+  console.log(everyone[1]); // O(1)
+}
+
+compressBoxes(); //O(2)
+
+/*
+ * when it comes to cost and time we dont care of small things
+ * so we round it to O(1) (dont mix 1 with number of operations,
+ * here its time taken is constant)
+ */
