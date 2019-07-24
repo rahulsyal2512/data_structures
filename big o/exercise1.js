@@ -2,7 +2,7 @@ function funChallenge(input) {
   let a = 10; //O(1)
   a = 50 + 3; //O(1)
 
-  for (let i = 0; i < input; i++) { //O(n)
+  for (let i = 0; i < input; i++) {
     anotherFunction(); //O(n)
     let stranger = true; //O(n)
     a++; //O(n)
@@ -12,5 +12,5 @@ function funChallenge(input) {
 
 funChallenge();
 
-// Big O(3+ 4n)
+// Big O(3+ 3n)
 // its just simple calculation ...we will simplify it to O(n)
