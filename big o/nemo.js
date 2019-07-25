@@ -8,6 +8,9 @@ function findNemo(array) {
   for (i = 0; i < array.length; i++) {
     if (array[i] === "nemo") {
       console.log("Found nemo");
+      break;
+      // it is added because the loop was running 10 times before(input= 10)
+      // so some optimization for now!
     }
   }
   // let t1 = performance.now();
