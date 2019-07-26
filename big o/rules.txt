@@ -1,3 +1,4 @@
 1. Always watchout for worse case scenerios
 2. Drop the constants
 3. Different terms for inputs
+4. Drop non Dominants
