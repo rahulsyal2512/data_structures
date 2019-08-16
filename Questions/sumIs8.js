@@ -42,3 +42,5 @@ function hasPairWithSum2(arr, sum){
   }
   
   hasPairWithSum2([6,4,3,2,1,7], 9)
+
+// O(n)
