@@ -8,12 +8,17 @@ const numbers = [1,2,3,4,5];
 strings.push('e');  //O(1)
 
 //pop
-strings.pop(); // 0(1)
+strings.pop(); // O(1)
 
 //unshift
-strings.unshift('x') // 0(n) because it had to traverse each element to shift one index further
+strings.unshift('x') // O(n) because it had to traverse each element to shift one index further
 
 //splice
-strings.splice(2, 0, 'alien'); //0(1)
+strings.splice(2, 0, 'alien'); //O(n) TAKE THE WORST CASE
 
 console.log(strings)
+
+// LOOKUP  -- O(1)
+// PUSH    -- O(1)
+// INSERT  -- O(n)
+// DELETE  -- O(n)
