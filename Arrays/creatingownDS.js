@@ -17,6 +17,19 @@ class MyArray {
     this.length--;
     return lastItem;
   }
+  deleteAtIndex(index) {
+    const item = this.data[index];
+    this.shiftItems(index);
+    return item;
+  }
+  shiftItems(index) {
+    for (let i = index; i < this.length - 1; i++) {
+      this.data[i] = this.data[i + 1];
+    }
+    console.log(this.data[this.length - 1]);
+    delete this.data[this.length - 1];
+    this.length--;
+  }
 }
 
 const myArray = new MyArray();
@@ -26,4 +39,6 @@ myArray.push("!");
 myArray.push("are");
 myArray.push("nice");
 myArray.pop();
+myArray.shiftItems(0);
+myArray.deleteAtIndex(0);
 console.log(myArray);
