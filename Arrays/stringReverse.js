@@ -11,10 +11,22 @@ function reverse(str) {
   for (let i = totalLength; i >= 0; i--) {
     revArray.push(str[i]);
   }
-  console.log(revArray)
+  console.log(revArray);
   // Joining the array elements
   return revArray.join(""); //or use toString()
 }
 
-reverse("Hi Rahul!");
-// ABCD
+function reverse2(str) {
+  console.log(
+    str
+      .split("")
+      .reverse()
+      .join("")
+  );
+}
+
+function reverse3(str) {
+  console.log([...str].reverse().join(""));
+}
+
+reverse2("Hi Rahul!");
