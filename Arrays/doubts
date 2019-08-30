@@ -1,0 +1,17 @@
+// sum equal 9 prog
+// merge unsorted array
+// move 0 to end
+function zeros(arr) {
+  let { length } = arr;
+
+  for (let i = 0; i < length; i++) {    
+    if (arr[i] === 0) {
+      for (let x = i; x < length - 1; x++) {
+        [arr[x], arr[x + 1]] = [arr[x + 1], arr[x]];
+      }
+      i--;
+      length--;
+    }
+  }
+  return arr;
+}

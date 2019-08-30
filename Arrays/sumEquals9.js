@@ -26,4 +26,5 @@ var twoSums = function(nums, target) {
     });
     return result;
 }
+
 twoSum([2, 4, 7, 8], 9);
