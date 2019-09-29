@@ -1,4 +1,4 @@
-function MaxSumSubArray(a, size) {
+function MaxSubArray(a, size) {
   let MaxSum = a[0];
   let MaxSumStart = 0,
     MaxSumEnd = 0;
@@ -20,7 +20,7 @@ function MaxSumSubArray(a, size) {
   console.log("Maz Sum Start : ", MaxSumStart, "  MaxSumEnd : ", MaxSumEnd);
 }
 
-MaxSumSubArray([-1, 3, -1, 0, 6, 2, -2], 7);
+MaxSubArray([-1, 3, -1, 0, 6, 2, -2], 7);
 
 function maxSum() {
   max_current = max_global = A[0];
