@@ -9,7 +9,7 @@ class HashTable {
       hash = (hash + key.charCodeAt(i) * i) % this.data.length;
     }
     return hash;
-  }
+  } //O(n)
   set(key, value) {
     let address = this._hash(key);
     if (!this.data[address]) {
@@ -17,7 +17,7 @@ class HashTable {
     }
     this.data[address].push([key, value]);
     return this.data;
-  }
+  } //O(1)
   get(key) {
     const address = this._hash(key);
     const currentBucket = this.data[address];
@@ -29,7 +29,7 @@ class HashTable {
       }
     }
     return undefined;
-  }
+  } //O(1)
 }
 
 const myHashTable = new HashTable(50);
