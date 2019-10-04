@@ -30,6 +30,16 @@ class HashTable {
     }
     return undefined;
   } //O(1)
+  keys(){
+    const keysArray = [];
+    console.log(this.data.length);
+    for (let i = 0; i < this.data.length; i++){
+      if(this.data[i]){
+        keysArray.push(this.data[i][0][0])
+      }
+    }
+    return keysArray;
+  }
 }
 
 const myHashTable = new HashTable(50);
