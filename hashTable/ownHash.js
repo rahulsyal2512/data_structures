@@ -43,7 +43,7 @@ class HashTable {
     }
     return keysArray;
   }
-}
+} //O(n)
 
 const myHashTable = new HashTable(50);
 myHashTable.set("grapes", 10000);
