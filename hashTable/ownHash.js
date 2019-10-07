@@ -10,6 +10,7 @@ class HashTable {
     }
     return hash;
   } //O(n)
+
   set(key, value) {
     let address = this._hash(key);
     if (!this.data[address]) {
@@ -18,6 +19,7 @@ class HashTable {
     this.data[address].push([key, value]);
     return this.data;
   } //O(1)
+
   get(key) {
     const address = this._hash(key);
     const currentBucket = this.data[address];
@@ -30,12 +32,13 @@ class HashTable {
     }
     return undefined;
   } //O(1)
-  keys(){
+
+  keys() {
     const keysArray = [];
     console.log(this.data.length);
-    for (let i = 0; i < this.data.length; i++){
-      if(this.data[i]){
-        keysArray.push(this.data[i][0][0])
+    for (let i = 0; i < this.data.length; i++) {
+      if (this.data[i]) {
+        keysArray.push(this.data[i][0][0]);
       }
     }
     return keysArray;
@@ -47,3 +50,4 @@ myHashTable.set("grapes", 10000);
 myHashTable.get("grapes");
 myHashTable.set("apples", 9);
 myHashTable.get("apples");
+myHashTable.keys();
